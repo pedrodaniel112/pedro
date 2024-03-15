@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+	<title>Portal </title>
+	<style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+	  body{
+	margin:0;
+	font-family: Arial;
+	font-size: 12px;
+	background: linear-gradient(90deg,#000000,#3c3c3c);
+	font-family: "Lato";
+	font-weight: 700;
+	font-style: italic;
+}
+
+.topo{
+	width: 100%;
+	height: 32px;
+	background-color: #333;
+	color: #FFF;
+}
+
+.topoint{
+	width: 100%;
+	height: 32px;
+	max-width: 1044px;
+	margin: auto;
+}
+
+.topoleft{
+	width: 50%;
+	height: 32px;
+	background-color: none;
+	float: left;
+
+
+}
+
+.toporight{
+	width: 50%;
+	height: 32px;
+	float: right;
+	text-align: right;
+	margin-top: 0px;
+}
+
+.topoleft ul {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+.topoleft li {
+	float: left;
+	margin-left: 8px;
+	margin-right: 8px;
+	line-height: 32px;
+}
+
+.topoleft li a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.topoleft a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+
+.topobusca{
+	width: 126px;
+	height: 20px;
+	outline: none;
+	border: 2px solid darkred;
+	border-radius: 14px;
+}
+
+.toporight a {
+	float: right;
+	height: 26px;
+	margin-top: 3px;
+}
+
+.toporight input {
+	float: right;
+	margin-right: 3px;
+	margin-top: 3px;
+	outline: 0;
+}
+
+.toporight img {
+	margin-right: 5px;
+	
+}
+
+.topo2{
+	height: 96px;
+}
+
+.topo2int{
+	width: 100%;
+	max-width: 1040px;
+	height: 96px;
+	margin: auto;
+}
+
+.logo{
+	width: 230px;
+	height: 96px;
+	float: left;
+}
+
+.logo img {
+  height: 100px;
+  width: 130px;
+	margin-top: 2px;
+}
+
+.topo2 .banner{
+	width: 650px;
+	height: 80px;
+	margin-top: 8px;
+	float: right;
+	background: linear-gradient(#ff0019,darkred);
+	text-align: center;
+	line-height: 80px;
+	color: white;
+	font-size: 30px;
+	font-family: "Lato";
+	font-weight: 700;
+	font-style: italic;
+	border-radius: 15px;
+	
+
+}
+
+
+
+.menu {
+	display: block;
+	height: 40px;
+	background: linear-gradient(rgb(25, 25, 25),rgb(108, 108, 108));
+}
+
+.menuint {
+	display: block;
+	width: 100%;
+	max-width: 1040px;
+	height: 40px;
+	margin: auto;
+
+}
+
+.menu ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.menu li {
+	float: left;
+	line-height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: 0.3s;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu {
+	display: block;
+}
+
+.menuint li:hover {
+	color: black;
+	background: red;
+}
+
+.submenu {
+	width: 150px;
+	background-color: rgb(76, 76, 76);
+	position: absolute;
+	margin-left: -10px;
+	display: none;
+	transition: 0.4s;
+}
+
+
+.submenuitem {
+	width: 140px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	transition: 0.3s;
+}
+
+.submenuitem:hover {
+	background-color: orangered;
+}
+
+.ultimasnoticias {
+	height: 50px;
+}
+
+.ultimasnoticiasint {
+	width: 100%;
+	max-width: 1040px;
+	height: 40px;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.ultnoticiasarea {
+	
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 18px;
+	background: linear-gradient(45deg,red,darkred);
+	color: white;
+	height: 30px;
+	line-height: 28px;
+	display: inline-block;
+	display: flex;
+	top: 20px;
+	padding-left: 450px;
+	padding-right: 10px;
+	font-size: 17px;
+	font-family: "Lato";
+	font-weight: 700;
+	font-style: italic;
+	
+	
+}
+
+.ultnoticiasnoticia {
+	color: rgb(255, 255, 255);
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.widget iframe {
+	width: 100px
+}
+
+.containerint {
+	width: 100%;
+	max-width: 1040px;
+	margin: auto;
+	background: none;
+}
+
+.rightside {
+	
+	float: right;
+	margin-left: 100px;
+	margin-top: -1109px;
+	margin-right: 50px;
+
+	text-align: center;
+
+	
+}
+
+.leftside{
+	width: 1000px;
+	float: left;
+}
+
+.widget {
+	background-color: rgb(32, 32, 32);
+	color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 0px;
+}
+
+.widget_titulo {
+	color: #FFF;
+	height: 30px;
+	background: linear-gradient(red,darkred);
+	border-bottom: 1px solid black;
+	line-height: 30px;
+	padding-left: 20px;
+	border-radius: 15px;
+	display: flex;
+	left: 45px;
+}
+
+
+.widget_conteudo {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.noticia_item {
+	font-size: 14px;
+	margin: 0px 10px;
+	padding: 10px 0px;
+	text-align: left;
+	border-bottom: 1px solid grey;
+}
+
+.noticia_item a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	transition: 0.5s;
+}
+
+	.noticia_item a:hover {
+		color:red;
+	}
+
+
+.slideshow{
+	width: 900px;
+	height: 335px;
+	background-color: #CCC;
+	overflow: hidden; /*Tudo que não estiver dentro da div slideshow não será mostrado*/
+	margin-bottom: 20px;
+	border-radius: 20px;
+	border: 3px solid black;
+}
+
+.slideshow_area {
+	width: 3012px; /* 5 vezes a largura do slide*/
+	height: 335px;
+	transition: all 0.5s linear;
+	
+}
+
+.slide {
+	width: 100%;
+	height: 335px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.slide_info {
+	height: 70px;
+	background-image: url('../images/slideshow_bg.png');
+	background-size: 70px;
+	background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,1));
+	margin-top: 265px;
+}
+
+.slide_info_titulo {
+	font-size: 20px;
+	color: white;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+.slide_info_subtitulo {
+	font-size: 13px;
+	color: white;
+	padding-left: 20px;
+}
+
+.slide_bolinhas {
+	position: absolute;
+	width: 200px;
+	height: 20px;
+	padding: 5px;
+
+}
+
+.bolinha{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+	/*Aparecer o cursor ao passar o mouse*/
+	border-radius: 10px;
+	background: linear-gradient(rgb(255, 0, 0),rgb(134, 0, 0));
+}
+
+.noticiaarea1 {
+	width: 430px;
+	float: left;
+	border-radius: 14px;
+	
+
+}
+
+.noticiaarea2 {
+	width: 321px;
+	float: left;
+		border-radius: 14px;
+}
+
+.noticiaitem {
+	text-align: left;
+	height: 88px;
+	margin-top: 7px;
+	margin-bottom: 15px;
+	
+}
+
+.noticiaimg{
+	width: 80px;
+	height: 80px;
+	border: 1px solid black;
+	
+	float: left;
+	border-radius: 14px;
+}
+
+
+.noticiatitulo{
+	margin-left: 6px;
+	font-size: 16px;
+	float: left;
+	width:226px;
+	transition: 0.3s;
+}
+
+.noticiatitulo:hover {
+	color: red;
+
+}
+
+.noticiainfo {
+	width: 220px;
+	font-size: 12px;
+	margin-left: 6px;
+	margin-top: 5px;
+	color: #1e1e1e;
+	float: left;
+
+}
+
+.noticiabig {
+	margin-left: 10px;
+}
+
+
+.noticiabig .noticiaimg{
+	width: 384px;
+	height: 222px;
+		border-radius: 14px;
+}
+
+.noticiabig .noticiaimg img {
+	width: 384px;
+	height: 222px;
+		border-radius: 14px;
+}
+
+.noticiabig .noticiatitulo {
+	width: 384px;
+	font-size: 30px;
+	margin-top: 10px;
+		border-radius: 14px;
+}
+
+.noticiabig .noticiainfo {
+	width: 392px;
+	margin-bottom: 5px;
+		border-radius: 14px;
+}
+
+.menumobile{
+	display: none;
+}
+
+
+
+@media only screen and (min-width: 906px) and (max-width: 1057px){
+
+	.topoint,
+	.topo2int,
+	.menuint,
+	.ultimasnoticiasint,
+	.containerint{
+		max-width: 890px;
+			border-radius: 14px;
+	}
+
+	#menu {
+		display: block !important;
+	}
+
+	.leftside{
+		width: 603px;
+	}
+
+	.noticiaarea1{
+		width: 280px;
+	}
+
+	.noticiabig .noticiaimg{
+		width: 250px;
+	}
+
+	.noticiabig .noticiaimg img{
+		width: 250px;
+	}
+
+	.noticiabig .noticiatitulo{
+		width: 250px;
+		font-size: 25px;
+	}
+
+}
+
+@media only screen and (min-width: 783px) and (max-width: 906px){
+
+	.topoint,
+	.topo2int,
+	.menuint,
+	.ultimasnoticiasint,
+	.containerint{
+		max-width: 768px;
+	}
+
+	.topo2 .banner{
+		display: none;
+	}
+
+	#menu {
+		display: block !important;
+	}
+
+
+	.logo{
+		float: none;
+		margin: auto;
+	}
+
+	.rightside{
+		display: none;
+		display: flex;
+	}
+
+	.leftside{
+		float: none;
+		width: auto;
+	}
+
+	.noticiaarea1{
+		width: 445px;
+	}
+
+	.noticiabig .noticiaimg{
+		width: 415px;
+	}
+
+	.noticiabig .noticiaimg img{
+		width: 415px;
+	}
+
+	.noticiabig .noticiatitulo{
+		width: 415px;
+		font-size: 25px;
+	}
+
+}
+
+@media only screen and (max-width: 783px){
+	.topoint,
+	.topo2int,
+	.menuint,
+	.ultimasnoticiasint,
+	.containerint{
+		max-width: 320px;
+	}
+
+
+	.topoleft{
+		display: none;
+	}
+
+	.toporight{
+		width: 100%;
+	}
+
+	.topo2 .banner{
+		display: none;
+	}
+
+	.logo{
+		float: none;
+		margin: auto;
+	}
+
+
+	.menu ul{
+		display: none;
+		position: absolute;
+		background-color: rgb(255, 0, 0);
+		z-index: 10;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.menu li{
+		float: none;
+		height: auto;
+	}
+
+	.menu li img{
+		display: none;
+	}
+
+	.submenu{
+		width: 220px;
+		position: static;
+		display: block;
+	}
+
+	.submenu div {
+		width: 210px;
+	}
+
+	.menuint li{
+		width: 200px;
+	}
+
+	.menumobile{
+		display: block;
+	}
+
+	.ultimasnoticias{
+		display: none;
+	}
+
+	.rightside{
+		display: none;
+	}
+
+	.leftside{
+		float: none;
+		width: auto;
+		margin-top: 10px;
+	}
+
+	.noticiaarea1{
+		height: auto;
+		width: 320px;
+	}
+
+	.noticiabig .noticiaimg{
+		width: 290px;
+	}
+
+	.noticiabig .noticiaimg img{
+		width: 290px;
+	}
+
+	.noticiabig .noticiatitulo{
+		width: 290px;
+		font-size: 25px;
+	}
+
+	.noticiabig .noticiainfo {
+		width: 290px;
+	}
+
+	.noticiaarea2{
+		width: 300px;
+		margin: auto;
+		float: none;
+		clear: both;
+		padding-top: 20px;
+	}
+
+	.noticiaitem{
+		clear: both;
+	}
+
+	.noticiatitulo{
+		width: 206px;
+	}
+
+	.noticiainfo{
+		width: 206px;
+	}
+}
+
+.noticiatitulo8 h2 {
+ 
+  
+  transition: 0.3s;
+  display: flex;
+  text-align: center;
+  position: relative;
+  left: -30px;
+  font-family: Sans-serif;
+  color: red;
+  font-size: 15px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  bottom: 80px;
+  font-size: 20px;
+}
+
+	.noticiatitulo8 h2:hover {
+	color: rgb(89, 0, 255);
+}
+
+.noticiatitulo a {
+	color: red;
+	text-decoration: none;
+}
+.noticiatitulo a:hover{
+	color:  rgb(89, 0, 255);
+}
+
+
+.noticiainfo8 h3 {
+  display: flex;
+  position: relative;
+  font-size: 15px;
+  margin-top: -60px;
+  text-align: center;
+  width: 500px;
+  left: -30px;
+  height: +x;
+
+}
+
+.janela {
+
+	background-color: gray;
+	border: 5px solid black;
+	border-radius: 20px;
+	margin-left: 80px;
+
+
+
+
+
+}
+a#ttt{
+	color: #FFF;
+	text-decoration: none;
+}
+
+	
+	</style>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	
+</head>
+<body>
+	<div class="topo">
+		<div class="topoint">
+			
+			<div class="topoleft">
+				<ul>
+					<li><a href="Quem somos">Quem Somos</a></li>
+					<li><a href="Anucie aqui">Anuncie aqui</a></li>
+					<li><a href="Contato">Contato</a></li>
+				</ul>
+			</div>
+
+			<div class="toporight">
+
+				<input type="image" src="assets/images/search.png" width="26" height="26">
+				<input type="text" name="busca" class="topobusca" placeholder="Pesquisar..."/>
+
+				<a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+				<a href=""><img src="assets/images/google-plus.png" border="0" width="26" height="26"></a>
+				<a href=""><img src="assets/images/linkedin.png" border="0" width="26" height="26"></a>
+				<a href=""><img src="assets/images/deviantart.png" border="0" width="26" height="26"></a>
+				<a href=""><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="topo2">
+		<div class="topo2int">
+			<div class="logo"><img src="ziu.png" border="0" width="230" height="78"></div>
+			<div class="banner">
+			 JORNAL ECIT
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="menu">
+		<div class="menuint">
+			<img src="assets/images/menu.png" border="0" width="40" height="40" class="menumobile" onclick="toggleMenu()">
+
+			<ul id="menu">
+				<li><a href="">Home</a></li>
+				<li><a href="">Protagonismo</a></li>
+				<li>
+					<a href="">Entreterimento</a>
+					<div class="submenu">
+						<a href=""><div class="submenuitem">Sub menu 1</div></a>
+						<a href=""><div class="submenuitem">Sub menu 2</div></a>
+						<a href=""><div class="submenuitem">Sub menu 3</div></a>
+						<a href=""><div class="submenuitem">Sub menu 4</div></a>
+						<a href=""><div class="submenuitem">Sub menu 5</div></a>
+					</div>
+				</li>
+				<li>
+					<a href="">Esportes</a>
+					<div class="submenu">
+						<a href=""><div class="submenuitem">Sub menu 1</div></a>
+						<a href=""><div class="submenuitem">Sub menu 2</div></a>
+						<a href=""><div class="submenuitem">Sub menu 3</div></a>
+					</div>
+				</li>
+				<li><a href="">Geral</a></li>
+				<li>
+					<a href="">Noticias</a>
+					<div class="submenu">
+						<a href=""><div class="submenuitem">texto 1</div></a>
+						<a href=""><div class="submenuitem">texto 2</div></a>
+						<a href=""><div class="submenuitem">texto 3</div></a>
+						<a href=""><div class="submenuitem">texto 4</div></a>
+					</div>
+				</li>
+				<li><a href="">Polícia</a></li>
+				<li><a href="">Videos</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="ultimasnoticias">
+		<div class="ultimasnoticiasint">
+			<div class="ultnoticiasarea">ultimas noticias
+				<div class="ultnoticiastitulo"></div>
+				<div class="ultnoticiasnoticia"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="containerint">
+			<div class="leftside">
+				<div class="slideshow" id="slideshow">
+					<div class="slide_bolinhas">
+						<div class="bolinha" onclick="mudarSlide(0)"></div>
+						<div class="bolinha" onclick="mudarSlide(1)"></div>
+						<div class="bolinha" onclick="mudarSlide(2)"></div>
+					
+					</div>
+
+					<div class="slideshow_area">
+						<div class="slide" style="background-image: url('assets/images/f3.jpg');">
+							<div class="slide_info">
+								<div class="slide_info_titulo"></div>
+								<div class="slide_info_subtitulo"></div>
+							</div>
+						</div>
+						<div class="slide" style="background-image: url('assets/images/f1.jpg');">
+							<div class="slide_info">
+								<div class="slide_info_titulo"></div>
+								<div class="slide_info_subtitulo"></div>
+							</div>
+						</div>
+						<div class="slide" style="background-image: url('assets/images/f2.jpg');">
+							<div class="slide_info">
+								<div class="slide_info_titulo"></div>
+								<div class="slide_info_subtitulo"></div>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+
+
+				<div class="widget"style="width: 900px">
+					<div class="widget_titulo">NOTICIAS</div>
+					<div class="widget_conteudo">
+
+						<div class="noticiaarea1">
+							<div class="noticiaitem noticiabig">
+								<div class="noticiaimg">
+									<img src="gira.mundo.jpeg" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">
+								  <a href="gira mundo.html">
+									Projeto Gira mundo
+								  </a>
+								</div>
+
+								<div class="noticiainfo">projeto gira mundo na ECIT adilina de sousa diniz</div>
+							</div>
+						</div>
+
+						<div class="noticiaarea2">
+							<div class="noticiaitem">
+								<div class="noticiaimg">
+									<img  style="border-radius: 14px;"  src="https://valedopianco.com.br/hf-conteudo/uploads/posts/2024/03/63932_d2d62e1fbf22b493af47735495cef0ae.jpg" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">Depois do Cruzeiro, agora o Sousa eliminou o Petrolina-PE e avançou para 3ª fase da Copa do Brasil</div>
+								<div class="noticiainfo"></div>
+							</div>
+
+							<div class="noticiaitem">
+								<div class="noticiaimg">
+									<img  style="border-radius: 14px;" src="https://valedopianco.com.br/hf-conteudo/uploads/posts/2024/03/64230_d502e29063d74319b594346da8998e6a.jpg" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">Homem que agrediu porteiro em Porto Alegre é indiciado por injúria racial</div>
+								<div class="noticiainfo"></div>
+							</div>
+
+							<div class="noticiaitem">
+								<div class="noticiaimg">
+									<img  style="border-radius: 14px;" src="https://valedopianco.com.br/hf-conteudo/uploads/posts/2024/03/64273_583f03d72dc79d2e010f95cb8a808b10.jpg" border="0" width="80" height="80">
+								</div>
+								<div class="noticiatitulo">Coronel Sobreira defende trabalho da Polícia Militar em casos de reintegração de posse</div>
+								<div class="noticiainfo"></div>
+							</div>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+
+				<div class="widget"style="width: 900px">
+					<div class="widget_titulo">NOTICIAS</div>
+					<div class="widget_conteudo">
+
+						<div class="noticiaarea1">
+							<div class="noticiaitem noticiabig">
+								<div class="noticiaimg">
+									<img src="https://www.valedopianconoticias.com.br/wp-content/uploads/2024/03/7ccc492a-ca69-4294-89f7-6de7fd9f3ea5-860x596.jpg" border="0" width="80" height="80">
+								
+								</div>
+									<div class="noticiatitulo"></div>
+									<div class="noticiainfo"></div>
+									</div>
+									</div>
+								
+									<div class="noticiaarea2">
+									  <div class="noticiaitem">
+									    <div class="noticiaimg"style="border: none"></div>
+									    <div class="noticiatitulo8"><h2>Réu acusado de matar mulher é condenado a mais de 23 anos de prisão pelo Tribunal do Júri Popular, em Conceição</h2></div></div>
+									    <div class="noticiainfo8"><h3> O réu, Eraldo Alves da Silva foi condenado a 23 anos e 6 meses de cadeia pela morte  de Edileuda Alves Leite. Ele foi submetido ao Tribunal do Júri Popular, durante sessão realizada nesta sexta-feira (8), na Comarca de Conceição. O crime ocorreu no dia 16 de Setembro de 2017, no Sítio Saco da Serra, zona rural de Santa Inês</h3>
+											<br><a href="https://www.valedopianconoticias.com.br/2024/03/09/reu-acusado-de-matar-mulher-e-condenado-a-mais-de-23-anos-de-prisao-pelo-tribunal-do-juri-popular-em-conceicao-video/">Saiba mais..></a></div>
+									  </div>
+								
+									  <div class="noticiaitem">
+									    <div class="noticiaimg"style="border: none">
+									      
+									    </div>
+									    <div class="noticiatitulo"></div>
+									    <div class="noticiainfo"></div>
+									  </div>
+								
+									  <div class="noticiaitem">
+									    <div class="noticiaimg"style="border: none">
+									    </div>
+									    <div class="noticiatitulo"></div>
+									    <div class="noticiainfo"></div>
+									  </div>
+									</div>
+									<div style="clear: both;"></div>
+									</div>
+							
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+
+
+			</div>
+			
+			<div class="rightside">
+				<div class="widget">
+					<div class="widget_titulo" style="width: auto">SOCIAL</div>
+					<div class="widget_conteudo">
+						<a href=""><img src="assets/images/facebook.png" border="0" width="26" height="26"></a>
+						
+						<a href=""><img src="assets/images/linkedin.png" border="0" width="26" height="26"></a>
+						<a href=""><img src="assets/images/deviantart.png" border="0" width="26" height="26"></a>
+						<a href=""><img src="assets/images/twitter.png" border="0" width="26" height="26"></a>
+					</div>
+				</div>
+
+				<div class="widget">
+					<div class="widget_titulo">ULTIMAS NOTICIAS</div>
+					<div class="widget_conteudo">
+						<div class="noticia_item">
+							<a href="noticias">Idoso é preso pela Polícia Civil <br>
+								suspeito de estuprar criança de <br>
+								 12 anos, no Sertão da Paraíba</a>
+						</div>
+						<div class="noticia_item">
+							<a href="">inserir texto inserir texto</a>
+						</div>
+						<div class="noticia_item">
+							<a href="">inserir texto inserir texto</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="widget">
+					<div class="widget_titulo">PUBLICIDADE</div>
+					<div class="widget_conteudo">
+						<img src="assets/images/banner.jpg" border="0" width="1000px">
+					</div>
+				</div>
+
+				<div class="widget">
+					<div class="widget_titulo"></div>
+					<div class="widget_conteudo">
+						
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<script>
+ 
+var slideItem = 0;
+
+window.onload = function() {
+
+
+	setInterval(passarSlide, 3000);
+
+	var slidewidth = document.getElementById("slideshow").offsetWidth;
+	var objs = document.getElementsByClassName("slide");
+
+	for (var i = 0; i <= 2; i++){
+		objs[i].style.width = slidewidth +"px";
+	}
+
+	document.getElementsByClassName("bolinha")[0].style.backgroundColor = "blue";
+}
+
+function passarSlide(){
+	var slidewidth = document.getElementById("slideshow").offsetWidth;
+	var objs2 = document.getElementsByClassName("bolinha");
+
+	console.log(slideItem);
+	console.log(slidewidth);
+
+	if (slideItem === 0) {
+			document.getElementsByClassName("slideshow_area")[0].style.marginLeft = "-"+(slidewidth * slideItem)+"px";
+			objs2[0].style.backgroundColor = "blue";
+			objs2[1].style.backgroundColor = "red";
+			objs2[2].style.backgroundColor = "red";
+			
+
+			slideItem++;
+
+		} else if (slideItem === 1) {
+			document.getElementsByClassName("slideshow_area")[0].style.marginLeft = "-"+(slidewidth * slideItem)+"px";
+			objs2[0].style.backgroundColor = "red";
+			objs2[1].style.backgroundColor = "blue";
+			objs2[2].style.backgroundColor = "red";
+			
+
+			slideItem++;
+
+		} else if (slideItem === 2) {
+			document.getElementsByClassName("slideshow_area")[0].style.marginLeft = "-"+(slidewidth * slideItem)+"px";
+			objs2[0].style.backgroundColor = "red";
+			objs2[1].style.backgroundColor = "red";
+			objs2[2].style.backgroundColor = "blue";
+			
+
+			slideItem++;
+
+		} 
+
+}
+
+function mudarSlide(pos){
+	slideItem = pos;
+	var slidewidth = document.getElementById("slideshow").offsetWidth;
+
+	document.getElementsByClassName("slideshow_area")[0].style.marginLeft = "-"+(slidewidth * slideItem)+"px";
+
+}
+
+function toggleMenu(){
+
+	var menu = document.getElementById("menu");
+
+	if (menu.style.display == 'none' || menu.style.display == '') {
+		menu.style.display = "block";
+	} else {
+		menu.style.display = "none";
+	}
+}
+</script>
+</body>
+
+
+</html>
